@@ -20,7 +20,7 @@ export const init: IMigration = {
     module: "analytics",
     description: "Initial data for analytics module",
     version: "1.0.0",
-    order: 2,
+    order: 3,
     down: () => db.schema
         .dropTableIfExists("analyticsEvents"),
     up: () => db.schema
