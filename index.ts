@@ -1,4 +1,4 @@
-import { init } from "./migrations/00-init";
+import { init } from "../analytics/migrations/00-init";
 
 export { AnalyticsEndpoints as apiConfig } from "./endpoints";
 
