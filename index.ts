@@ -7,9 +7,11 @@ export const migrations = [init];
 export const setupMigrations = [init];
 
 FieldRegistry.register(
-    "analyticsEvents",
-    [
-        "url", "host", "referrer", "userAgent", "browserName", "browserVersion", "os",
-        "ipAddress", "geoCountry", "geoRegion", "geoCity", "screenWidth", "screenHeight", "timestamp"
-    ]
+    "analyticsEvents", {
+        create: [
+            "url", "host", "referrer", "userAgent", "browserName", "browserVersion", "os",
+            "ipAddress", "geoCountry", "geoRegion", "geoCity", "screenWidth", "screenHeight", "timestamp"
+        ],
+        update: [],
+    }
 );
