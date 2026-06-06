@@ -1,4 +1,4 @@
-import { FieldRegistry } from "@core/express/util";
+import { FieldRegistry } from "../core/express/util";
 import { init } from "../analytics/migrations/00-init";
 
 export { AnalyticsEndpoints as apiConfig } from "./endpoints";
